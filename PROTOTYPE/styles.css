@@ -1,0 +1,171 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(11, 31, 64);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  align-items: center;
+}
+
+header .left-content {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 40px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  height: 5px;
+  width: 150%;
+  background-color: white;
+}
+
+header h1 {
+  margin: 0 30px 0 0;
+  font-size: 5em;
+  font-family: 'Bell MT', serif;
+  font-weight: 300;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+header .right-content img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1200px; /* Set a max-width for the main content */
+  margin: 0 auto; /* Center align the main content */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 130px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.8em;
+  color: rgb(11, 31, 64);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1.4em;
+  margin-left: 50px;
+  
+}
+
+label[for="postcode"], label[for="email"], label[for="mobile"] {
+  color: rgb(128, 128, 128);  
+}
+
+.input-field {
+  padding: 8px; /* Reduced padding */
+  font-size: 0.9em; /* Reduced font size */
+  margin-bottom: 15px; /* Reduced margin */
+  border-radius: 15px; /* Reduced border radius */
+  border: 2px solid rgb(6, 146, 201);
+  box-sizing: border-box;
+  margin-left: 50px;
+}
+
+.input-field.postcode-field {
+  width: 15%;
+}
+
+.input-field.email-field,
+.input-field.mobile-field {
+  width: 20%;
+}
+
+.recycling-question {
+  margin-bottom: 0px;
+  color: rgb(128, 128, 128);
+  font-size: 1.5em;
+  margin-left: 50px;
+}
+
+.recycling-question span {
+  display: block; /* Move this part to a new line */
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: rgb(6, 146, 201);
+  margin-left: 10px;
+}
+
+.radio-group label {
+  margin-right: 5px;
+  border-radius: 25px; /* More rounded border */
+  border: 1px solid rgb(6, 146, 201); /* Thinner border */
+  width: 90px; /* Increase width for oblong shape */
+  font-size: 1em;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgb(6, 146, 201);
+  background-color: white;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  background-color: rgb(6, 146, 201);
+  color: white;
+}
+
+/* Submit button style */
+.submit-button {
+  padding: 8px 20px; /* Match the padding of input fields */
+  font-size: 2em; /* Match the font size of input fields */
+  border: none;
+  border-radius: 10px; /* Reduced border radius */
+  background-color: rgb(11, 31, 64);
+  color: white;
+  cursor: pointer;
+  width: 150px; /* Match the width of input fields */
+  font-family: 'Bell MT', serif;
+  margin-left: 530px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: flex-start; /* Align the button to the start */
+  margin-top: 1px; /* Space above the button */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBERO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="left-content">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h1>LIBERO</h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>News</li>
+                    <li>Events</li>
+                    <li>World</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-content">
+            <img src="assets/search-icon.png" alt="Search">
+        </div>
+    </header>
+    <main>
+        <h2>How do you feel about recycling?</h2>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" class="input-field postcode-field">
+        <p class="recycling-question">
+            Should the government start enforcing garbage
+            <span>separation and recycling schemes across your area?</span>
+        </p>
+        <div class="radio-group">
+            <input type="radio" id="recycling-yes" name="recycling" value="yes">
+            <label for="recycling-yes">Yes</label>
+            <input type="radio" id="recycling-no" name="recycling" value="no">
+            <label for="recycling-no">No</label>
+        </div>
+        <label for="email">E-Mail Address:</label>
+        <input type="email" id="email" class="input-field email-field">
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" class="input-field mobile-field">
+        <div class="submit-container">
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
